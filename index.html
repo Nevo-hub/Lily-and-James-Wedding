@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James & Lily Wedding</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Lock Screen -->
+  <div class="jl-lock-screen">
+    <div class="jl-lock-hearts">
+      <span style="left: 5%; animation-delay: 0s;">💕</span>
+      <span style="left: 15%; animation-delay: 3s;">💖</span>
+      <span style="left: 85%; animation-delay: 1s;">💗</span>
+      <span style="left: 95%; animation-delay: 4s;">💞</span>
+    </div>
+    
+    <div class="jl-lock-card">
+      <h1 class="jl-lock-title" data-en="James & Lily" data-es="James & Lily">James & Lily</h1>
+      <p class="jl-lock-subtitle" data-en="Private Wedding Website" data-es="Sitio Web Privado de Boda">Private Wedding Website</p>
+      
+      <input 
+        type="password" 
+        id="lockPassword" 
+        class="jl-lock-input" 
+        placeholder="Enter password / Ingresa contraseña"
+        autocomplete="off"
+      >
+      
+      <button id="unlockBtn" class="jl-lock-btn" data-en="Unlock" data-es="Desbloquear">Unlock</button>
+      
+      <div class="jl-lock-lang">
+        <button id="lockBtnEnglish" class="jl-lock-lang-btn active">🇺🇸 EN</button>
+        <button id="lockBtnSpanish" class="jl-lock-lang-btn">🇲🇽 ES</button>
+      </div>
+      
+      <div class="jl-lock-error" data-en="Incorrect password. Try again." data-es="Contraseña incorrecta. Inténtalo de nuevo.">
+        Incorrect password. Try again.
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="jl-nav">
+    <div class="jl-nav-container">
+      <a href="#" class="jl-nav-logo" onclick="showPage('home')">J 💕 L</a>
+      
+      <ul class="jl-nav-links">
+        <li><a href="#" id="nav-home" class="active" onclick="showPage('home')" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="#" id="nav-story" onclick="showPage('story')" data-en="Our Story" data-es="Nuestra Historia">Our Story</a></li>
+        <li><a href="#" id="nav-about" onclick="showPage('about')" data-en="About Our Wedding" data-es="Nuestra Boda">About Our Wedding</a></li>
+        <li><a href="#" id="nav-details" onclick="showPage('details')" data-en="Details" data-es="Detalles">Details</a></li>
+        <li><a href="#" id="nav-rsvp" onclick="showPage('rsvp')" data-en="RSVP" data-es="Confirmar">RSVP</a></li>
+      </ul>
+
+      <div class="jl-nav-language">
+        <button class="jl-lang-btn" id="btnEnglish">🇺🇸 English</button>
+        <button class="jl-lang-btn" id="btnSpanish">🇲🇽 Español</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <div id="page-home" class="jl-page active">
+    <div class="jl-hero">
+      <!-- Floating hearts -->
+      <div class="jl-floating-hearts">
+        <span style="left: 10%; animation-delay: 0s;">💕</span>
+        <span style="left: 25%; animation-delay: 2s;">💖</span>
+        <span style="left: 40%; animation-delay: 4s;">💗</span>
+        <span style="left: 60%; animation-delay: 1s;">💌</span>
+        <span style="left: 80%; animation-delay: 3s;">💕</span>
+        <span style="left: 90%; animation-delay: 5s;">💞</span>
+      </div>
+
+      <!-- Floating flags and themed emojis -->
+      <div class="jl-floating-flags">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAoCAMAAAB0DnycAAAA8FBMVEX////OESYAaEfvrrWqzMH+/fleNh/r6d54SCZ4Ujb6+fCJVS/Hyajb3MimjYbX1LV6WkbEq3L18OvAwZy2uZDWysCRmGFsRSnMoV6Ra0y7k2M/jpDLzbKudkP78daxs4vy8+zw7M6ag3TdubVeQC5YnJ7o3tdoPiHV1r2idUmofFq1pI7UsInwzcCTdFesjGefo2/w5b3Jxp7HpaiUoW331MS8vpprzuTx2pmtxLGr09pIlJSuyMnQ3d0phIW5m3TkyoHi2bDZ19bIv6G7urri3drOwbqp2+l1ra/ItICZ2uiVrq7EvKp5hVsZfH9ye15Au84cAAABCUlEQVRIx+3URZKEQBQE0BqhBAp3aBzaXWjvcbf732Yu0IuJImJWlQd4m58/weX5XIOzubo4H8AZznDmz8wk6g9QMwaJo+GN5ELSbsTQmdeLelIHEqMJ073VhwHBLoRjdkaIgfkQ9EsoYYxtduZurtqRX0oSxh2FlUmBrOob3yXkOfc1BYhMTIuuVubG8zS31JCS29RkYqhqKFv9LfAJLLWnx/u6y8SIKtiHH8Xx+DlWtNwWVYGJEaY1OJzC79PX0jksRpbDxgBjnmbvu31YVVX4KlKZ9eBoKb+sde9HX89kRxaYe9Oy4iyZBIMdshKhwTNkyZRui9qx4oZDYaTFoo34iHKGM//L/ALg9STeQD2FxAAAAABJRU5ErkJggg==" alt="Mexico flag" style="left: 8%; animation-delay: 0s;">
+        <span style="left: 12%; animation-delay: 1.2s;">🌮</span>
+        <span style="left: 30%; animation-delay: 4s;">🌵</span>
+        <span style="left: 45%; animation-delay: 6.5s;">🗽</span>
+        <span style="left: 55%; animation-delay: 8s;">🎆</span>
+      </div>
+
+      <!-- Sparkles -->
+      <div class="jl-sparkles">
+        <span style="top: 20%; left: 14%;">✨</span>
+        <span style="top: 32%; right: 18%; animation-delay: 1s;">⭐</span>
+        <span style="bottom: 34%; left: 10%; animation-delay: 2s;">✨</span>
+        <span style="bottom: 38%; right: 15%; animation-delay: 0.5s;">⭐</span>
+        <span style="top: 50%; left: 50%; animation-delay: 1.5s;">✨</span>
+      </div>
+
+      <div class="jl-card">
+        <h1 class="jl-names">
+          <span id="nameLily" class="name-lily">Lily</span>
+          ❤️
+          <span id="nameJames" class="name-james">James</span>
+        </h1>
+        <div class="jl-location" id="jlLocation" data-en="Mexico City 🇲🇽" data-es="Ciudad de México 🇲🇽">
+          Mexico City 🇲🇽
+        </div>
+        <div class="jl-countdown" id="jlCountdown" aria-live="polite">
+          <div class="jl-c">
+            <span id="jlDays">000</span>
+            <em data-en="Days" data-es="Días">Days</em>
+          </div>
+          <div class="jl-c">
+            <span id="jlHours">00</span>
+            <em data-en="Hours" data-es="Horas">Hours</em>
+          </div>
+          <div class="jl-c">
+            <span id="jlMins">00</span>
+            <em data-en="Minutes" data-es="Minutos">Minutes</em>
+          </div>
+          <div class="jl-c">
+            <span id="jlSecs">00</span>
+            <em data-en="Seconds" data-es="Segundos">Seconds</em>
+          </div>
+        </div>
+        <p class="jl-tag" id="jlTag" data-en="Together Forever Starts Here" data-es="Juntos para siempre empieza aquí">
+          Together Forever Starts Here
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OUR STORY PAGE -->
+  <div id="page-story" class="jl-page">
+    <div class="jl-about">
+      <div class="jl-about-hero">
+        <h1 class="jl-about-title" data-en="Our Love Story" data-es="Nuestra Historia de Amor">Our Love Story</h1>
+        <p class="jl-about-subtitle" data-en="Two hearts, two cultures, one beautiful love story" data-es="Dos corazones, dos culturas, una hermosa historia de amor">
+          Two hearts, two cultures, one beautiful love story
+        </p>
+      </div>
+
+      <div class="jl-story-grid">
+        <div class="jl-story-card">
+          <span class="jl-story-icon">💕</span>
+          <h3 class="jl-story-title" data-en="How We Met" data-es="Cómo Nos Conocimos">How We Met</h3>
+          <p class="jl-story-text" data-en="Our paths crossed in the most unexpected way during a summer festival in Austin. James was visiting from California, and Lily was showing her friend around the city. What started as a chance encounter at a food truck turned into hours of conversation about travel, dreams, and our shared love for adventure." data-es="Nuestros caminos se cruzaron de la manera más inesperada durante un festival de verano en Austin. James estaba visitando desde California, y Lily le estaba enseñando la ciudad a su amiga. Lo que comenzó como un encuentro casual en un food truck se convirtió en horas de conversación sobre viajes, sueños y nuestro amor compartido por la aventura.">
+            Our paths crossed in the most unexpected way during a summer festival in Austin. James was visiting from California, and Lily was showing her friend around the city. What started as a chance encounter at a food truck turned into hours of conversation about travel, dreams, and our shared love for adventure.
+          </p>
+        </div>
+
+        <div class="jl-story-card">
+          <span class="jl-story-icon">🌎</span>
+          <h3 class="jl-story-title" data-en="Long Distance Love" data-es="Amor a Distancia">Long Distance Love</h3>
+          <p class="jl-story-text" data-en="From California to Mexico, our love grew stronger across borders. Video calls became our lifeline, and every visit felt like a celebration. We learned that love knows no boundaries and that distance only made our hearts grow fonder. Through different time zones and languages, we built something beautiful." data-es="De California a México, nuestro amor creció más fuerte a través de las fronteras. Las videollamadas se convirtieron en nuestro salvavidas, y cada visita se sentía como una celebración. Aprendimos que el amor no conoce límites y que la distancia solo hizo que nuestros corazones crecieran más. A través de diferentes zonas horarias y idiomas, construimos algo hermoso.">
+            From California to Mexico, our love grew stronger across borders. Video calls became our lifeline, and every visit felt like a celebration. We learned that love knows no boundaries and that distance only made our hearts grow fonder. Through different time zones and languages, we built something beautiful.
+          </p>
+        </div>
+
+        <div class="jl-story-card">
+          <span class="jl-story-icon">💍</span>
+          <h3 class="jl-story-title" data-en="The Proposal" data-es="La Propuesta">The Proposal</h3>
+          <p class="jl-story-text" data-en="James planned the perfect proposal during Lily's visit to San Francisco. On a foggy morning at Crissy Field with the Golden Gate Bridge in the background, he got down on one knee and asked the question that would change our lives forever. Through happy tears and 'Sí, mi amor!', we knew this was just the beginning of our greatest adventure." data-es="James planeó la propuesta perfecta durante la visita de Lily a San Francisco. En una mañana con niebla en Crissy Field con el Golden Gate Bridge de fondo, se arrodilló y hizo la pregunta que cambiaría nuestras vidas para siempre. Entre lágrimas de felicidad y '¡Sí, mi amor!', supimos que esto era solo el comienzo de nuestra mayor aventura.">
+            James planned the perfect proposal during Lily's visit to San Francisco. On a foggy morning at Crissy Field with the Golden Gate Bridge in the background, he got down on one knee and asked the question that would change our lives forever. Through happy tears and "Sí, mi amor!", we knew this was just the beginning of our greatest adventure.
+          </p>
+        </div>
+
+        <div class="jl-story-card">
+          <span class="jl-story-icon">🎉</span>
+          <h3 class="jl-story-title" data-en="Why Mexico City?" data-es="¿Por Qué Ciudad de México?">Why Mexico City?</h3>
+          <p class="jl-story-text" data-en="Mexico City holds a special place in our hearts. It's where Lily grew up, where her family creates the most incredible memories, and where James fell in love with Mexican culture. From the vibrant markets to the warm hospitality, this city represents the perfect blend of our two worlds coming together." data-es="La Ciudad de México tiene un lugar especial en nuestros corazones. Es donde Lily creció, donde su familia crea los recuerdos más increíbles, y donde James se enamoró de la cultura mexicana. Desde los mercados vibrantes hasta la cálida hospitalidad, esta ciudad representa la mezcla perfecta de nuestros dos mundos uniéndose.">
+            Mexico City holds a special place in our hearts. It's where Lily grew up, where her family creates the most incredible memories, and where James fell in love with Mexican culture. From the vibrant markets to the warm hospitality, this city represents the perfect blend of our two worlds coming together.
+          </p>
+        </div>
+      </div>
+
+      <div class="jl-timeline">
+        <h2 class="jl-timeline-title" data-en="Our Journey Together" data-es="Nuestro Viaje Juntos">Our Journey Together</h2>
+        
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="Summer 2022" data-es="Verano 2022">Summer 2022</div>
+          <div class="jl-timeline-content" data-en="First met at Austin Food Festival 🎪" data-es="Nos conocimos en el Festival de Comida de Austin 🎪">First met at Austin Food Festival 🎪</div>
+        </div>
+
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="Fall 2022" data-es="Otoño 2022">Fall 2022</div>
+          <div class="jl-timeline-content" data-en="James visits Mexico City for the first time 🇲🇽" data-es="James visita Ciudad de México por primera vez 🇲🇽">James visits Mexico City for the first time 🇲🇽</div>
+        </div>
+
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="Winter 2023" data-es="Invierno 2023">Winter 2023</div>
+          <div class="jl-timeline-content" data-en="Lily spends holidays in California with James's family 🎄" data-es="Lily pasa las fiestas en California con la familia de James 🎄">Lily spends holidays in California with James's family 🎄</div>
+        </div>
+
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="Summer 2024" data-es="Verano 2024">Summer 2024</div>
+          <div class="jl-timeline-content" data-en="Epic road trip from California to Mexico 🚗" data-es="Épico viaje por carretera de California a México 🚗">Epic road trip from California to Mexico 🚗</div>
+        </div>
+
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="December 2024" data-es="Diciembre 2024">December 2024</div>
+          <div class="jl-timeline-content" data-en="James proposes in San Francisco! 💍" data-es="¡James propone en San Francisco! 💍">James proposes in San Francisco! 💍</div>
+        </div>
+
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="October 2026" data-es="Octubre 2026">October 2026</div>
+          <div class="jl-timeline-content" data-en="Our wedding day in beautiful Mexico City! 💒" data-es="¡Nuestro día de boda en la hermosa Ciudad de México! 💒">Our wedding day in beautiful Mexico City! 💒</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT OUR WEDDING PAGE -->
+  <div id="page-about" class="jl-page">
+    <div class="jl-about">
+      <div class="jl-about-hero">
+        <h1 class="jl-about-title" data-en="About Our Wedding" data-es="Acerca de Nuestra Boda">About Our Wedding</h1>
+        <p class="jl-about-subtitle" data-en="Celebrating love where two cultures become one" data-es="Celebrando el amor donde dos culturas se vuelven una">
+          Celebrating love where two cultures become one
+        </p>
+      </div>
+
+      <div class="jl-story-grid">
+        <div class="jl-story-card">
+          <span class="jl-story-icon">🏛️</span>
+          <h3 class="jl-story-title" data-en="The Venue" data-es="El Lugar">The Venue</h3>
+          <p class="jl-story-text" data-en="We're getting married at a beautiful historic hacienda in Mexico City, surrounded by lush gardens and colonial architecture. The venue perfectly captures the romance of old Mexico with modern elegance, offering breathtaking views and an intimate atmosphere for our special day." data-es="Nos casaremos en una hermosa hacienda histórica en la Ciudad de México, rodeada de exuberantes jardines y arquitectura colonial. El lugar captura perfectamente el romance del México antiguo con elegancia moderna, ofreciendo vistas impresionantes y una atmósfera íntima para nuestro día especial.">
+            We're getting married at a beautiful historic hacienda in Mexico City, surrounded by lush gardens and colonial architecture. The venue perfectly captures the romance of old Mexico with modern elegance, offering breathtaking views and an intimate atmosphere for our special day.
+          </p>
+        </div>
+
+        <div class="jl-story-card">
+          <span class="jl-story-icon">🎭</span>
+          <h3 class="jl-story-title" data-en="Cultural Celebration" data-es="Celebración Cultural">Cultural Celebration</h3>
+          <p class="jl-story-text" data-en="Our wedding will be a beautiful fusion of American and Mexican traditions. From mariachi music to exchanging vows in both English and Spanish, we're creating a celebration that honors both of our heritages and brings our families together in the spirit of love and unity." data-es="Nuestra boda será una hermosa fusión de tradiciones estadounidenses y mexicanas. Desde música de mariachi hasta intercambiar votos tanto en inglés como en español, estamos creando una celebración que honra nuestras dos herencias y une a nuestras familias en el espíritu del amor y la unidad.">
+            Our wedding will be a beautiful fusion of American and Mexican traditions. From mariachi music to exchanging vows in both English and Spanish, we're creating a celebration that honors both of our heritages and brings our families together in the spirit of love and unity.
+          </p>
+        </div>
+
+        <div class="jl-story-card">
+          <span class="jl-story-icon">🍽️</span>
+          <h3 class="jl-story-title" data-en="Food & Festivities" data-es="Comida y Festividades">Food & Festivities</h3>
+          <p class="jl-story-text" data-en="Get ready for an incredible culinary journey! We'll be serving authentic Mexican cuisine alongside California favorites. Think handmade tortillas, mole, fresh ceviche, and signature cocktails featuring both tequila and craft beer. The celebration continues with dancing under the stars!" data-es="¡Prepárense para un viaje culinario increíble! Serviremos auténtica cocina mexicana junto con favoritos de California. Piensen en tortillas hechas a mano, mole, ceviche fresco y cócteles especiales con tequila y cerveza artesanal. ¡La celebración continúa bailando bajo las estrellas!">
+            Get ready for an incredible culinary journey! We'll be serving authentic Mexican cuisine alongside California favorites. Think handmade tortillas, mole, fresh ceviche, and signature cocktails featuring both tequila and craft beer. The celebration continues with dancing under the stars!
+          </p>
+        </div>
+
+        <div class="jl-story-card">
+          <span class="jl-story-icon">💒</span>
+          <h3 class="jl-story-title" data-en="The Ceremony" data-es="La Ceremonia">The Ceremony</h3>
+          <p class="jl-story-text" data-en="Our ceremony will take place in a beautiful garden courtyard at sunset, with heartfelt vows shared in both languages. We'll incorporate meaningful traditions like the lazo ceremony and arras, creating a spiritual and emotional celebration of our commitment to each other and our families." data-es="Nuestra ceremonia tendrá lugar en un hermoso patio jardín al atardecer, con votos sinceros compartidos en ambos idiomas. Incorporaremos tradiciones significativas como la ceremonia del lazo y las arras, creando una celebración espiritual y emocional de nuestro compromiso el uno con el otro y con nuestras familias.">
+            Our ceremony will take place in a beautiful garden courtyard at sunset, with heartfelt vows shared in both languages. We'll incorporate meaningful traditions like the lazo ceremony and arras, creating a spiritual and emotional celebration of our commitment to each other and our families.
+          </p>
+        </div>
+      </div>
+
+      <div class="jl-timeline">
+        <h2 class="jl-timeline-title" data-en="Wedding Weekend Timeline" data-es="Cronograma del Fin de Semana de Boda">Wedding Weekend Timeline</h2>
+        
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="Friday" data-es="Viernes">Friday</div>
+          <div class="jl-timeline-content" data-en="Welcome Party & Rehearsal Dinner 🎉" data-es="Fiesta de Bienvenida y Cena de Ensayo 🎉">Welcome Party & Rehearsal Dinner 🎉</div>
+        </div>
+
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="Saturday" data-es="Sábado">Saturday</div>
+          <div class="jl-timeline-content" data-en="Wedding Ceremony & Reception 💒" data-es="Ceremonia de Boda y Recepción 💒">Wedding Ceremony & Reception 💒</div>
+        </div>
+
+        <div class="jl-timeline-item">
+          <div class="jl-timeline-date" data-en="Sunday" data-es="Domingo">Sunday</div>
+          <div class="jl-timeline-content" data-en="Farewell Brunch & City Tour 🌮" data-es="Brunch de Despedida y Tour de la Ciudad 🌮">Farewell Brunch & City Tour 🌮</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DETAILS PAGE (placeholder) -->
+  <div id="page-details" class="jl-page">
+    <div class="jl-about">
+      <div class="jl-about-hero">
+        <h1 class="jl-about-title" data-en="Wedding Details" data-es="Detalles de la Boda">Wedding Details</h1>
+        <p class="jl-about-subtitle" data-en="Coming Soon!" data-es="¡Próximamente!">Coming Soon!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RSVP PAGE (placeholder) -->
+  <div id="page-rsvp" class="jl-page">
+    <div class="jl-about">
+      <div class="jl-about-hero">
+        <h1 class="jl-about-title" data-en="RSVP" data-es="Confirmar Asistencia">RSVP</h1>
+        <p class="jl-about-subtitle" data-en="Coming Soon!" data-es="¡Próximamente!">Coming Soon!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+  <!-- Inline backup script in case external file doesn't load -->
+  <script>
+    // Backup page switching function
+    if (typeof showPage === 'undefined') {
+      console.log('Loading backup scripts...');
+      
+      var currentLang = 'en';
+      var currentPage = 'home';
+      var isUnlocked = false;
+
+      function setLanguage(lang) {
+        currentLang = lang;
+        
+        var btnEnglish = document.getElementById('btnEnglish');
+        var btnSpanish = document.getElementById('btnSpanish');
+        
+        if (btnEnglish && btnSpanish) {
+          btnEnglish.classList.toggle('active', lang === 'en');
+          btnSpanish.classList.toggle('active', lang === 'es');
+        }
+
+        var lockBtnEnglish = document.getElementById('lockBtnEnglish');
+        var lockBtnSpanish = document.getElementById('lockBtnSpanish');
+        
+        if (lockBtnEnglish && lockBtnSpanish) {
+          lockBtnEnglish.classList.toggle('active', lang === 'en');
+          lockBtnSpanish.classList.toggle('active', lang === 'es');
+        }
+        
+        var elements = document.querySelectorAll('[data-en][data-es]');
+        elements.forEach(function(el) {
+          if (el.dataset[lang]) {
+            el.textContent = el.dataset[lang];
+          }
+        });
+
+        // Update background theme
+        var body = document.body;
+        var lockScreen = document.querySelector('.jl-lock-screen');
+        
+        if (lang === 'es') {
+          body.className = 'mexico-theme';
+          if (lockScreen) {
+            lockScreen.className = 'jl-lock-screen mexico-theme';
+          }
+        } else {
+          body.className = 'usa-theme';
+          if (lockScreen) {
+            lockScreen.className = 'jl-lock-screen usa-theme';
+          }
+        }
+
+        localStorage.setItem('preferredLanguage', lang);
+      }
+
+      function checkPassword() {
+        var passwordInput = document.getElementById('lockPassword');
+        var errorMsg = document.querySelector('.jl-lock-error');
+        var password = passwordInput.value;
+
+        if (password === 'password') {
+          isUnlocked = true;
+          localStorage.setItem('isUnlocked', 'true');
+          
+          var lockScreen = document.querySelector('.jl-lock-screen');
+          if (lockScreen) {
+            lockScreen.classList.add('hidden');
+            setTimeout(function() {
+              lockScreen.style.display = 'none';
+            }, 500);
+          }
+          
+          passwordInput.classList.remove('error');
+          if (errorMsg) {
+            errorMsg.classList.remove('show');
+          }
+        } else {
+          passwordInput.classList.add('error');
+          if (errorMsg) {
+            errorMsg.classList.add('show');
+          }
+          
+          setTimeout(function() {
+            passwordInput.value = '';
+            passwordInput.classList.remove('error');
+            if (errorMsg) {
+              errorMsg.classList.remove('show');
+            }
+          }, 2000);
+        }
+      }
+
+      function showPage(pageId) {
+        currentPage = pageId;
+        
+        var pages = document.querySelectorAll('.jl-page');
+        pages.forEach(function(page) {
+          page.classList.remove('active');
+        });
+        
+        var targetPage = document.getElementById('page-' + pageId);
+        if (targetPage) {
+          targetPage.classList.add('active');
+        }
+        
+        var navLinks = document.querySelectorAll('.jl-nav-links a');
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        
+        var activeNav = document.getElementById('nav-' + pageId);
+        if (activeNav) {
+          activeNav.classList.add('active');
+        }
+
+        localStorage.setItem('currentPage', pageId);
+      }
+
+      // Initialize when DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        // Check if site should be unlocked
+        var wasUnlocked = localStorage.getItem('isUnlocked');
+        if (wasUnlocked === 'true') {
+          isUnlocked = true;
+          var lockScreen = document.querySelector('.jl-lock-screen');
+          if (lockScreen) {
+            lockScreen.style.display = 'none';
+          }
+        }
+
+        var btnEnglish = document.getElementById('btnEnglish');
+        var btnSpanish = document.getElementById('btnSpanish');
+        
+        if (btnEnglish) {
+          btnEnglish.addEventListener('click', function() { setLanguage('en'); });
+        }
+        
+        if (btnSpanish) {
+          btnSpanish.addEventListener('click', function() { setLanguage('es'); });
+        }
+
+        var lockBtnEnglish = document.getElementById('lockBtnEnglish');
+        var lockBtnSpanish = document.getElementById('lockBtnSpanish');
+        
+        if (lockBtnEnglish) {
+          lockBtnEnglish.addEventListener('click', function() { setLanguage('en'); });
+        }
+        
+        if (lockBtnSpanish) {
+          lockBtnSpanish.addEventListener('click', function() { setLanguage('es'); });
+        }
+
+        var unlockBtn = document.getElementById('unlockBtn');
+        if (unlockBtn) {
+          unlockBtn.addEventListener('click', checkPassword);
+        }
+
+        var passwordInput = document.getElementById('lockPassword');
+        if (passwordInput) {
+          passwordInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+              checkPassword();
+            }
+          });
+        }
+        
+        var nameLily = document.getElementById('nameLily');
+        var nameJames = document.getElementById('nameJames');
+        
+        if (nameLily) {
+          nameLily.addEventListener('click', function() { setLanguage('es'); });
+        }
+        
+        if (nameJames) {
+          nameJames.addEventListener('click', function() { setLanguage('en'); });
+        }
+        
+        var savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        var savedPage = localStorage.getItem('currentPage') || 'home';
+        
+        setLanguage(savedLang);
+        showPage(savedPage);
+      });
+
+      // Countdown timer
+      (function () {
+        var targetTime = new Date('2026-10-04T00:00:00').getTime();
+        
+        function updateCountdown() {
+          var daysEl = document.getElementById('jlDays');
+          var hoursEl = document.getElementById('jlHours');
+          var minsEl = document.getElementById('jlMins');
+          var secsEl = document.getElementById('jlSecs');
+
+          var now = Date.now();
+          var diff = Math.max(0, targetTime - now);
+          var d = Math.floor(diff / (1000 * 60 * 60 * 24));
+          diff %= 1000 * 60 * 60 * 24;
+          var h = Math.floor(diff / (1000 * 60 * 60));
+          diff %= 1000 * 60 * 60;
+          var m = Math.floor(diff / (1000 * 60));
+          diff %= 1000 * 60;
+          var s = Math.floor(diff / 1000);
+          
+          if (daysEl && hoursEl && minsEl && secsEl) {
+            daysEl.textContent = String(d).padStart(3, '0');
+            hoursEl.textContent = String(h).padStart(2, '0');
+            minsEl.textContent = String(m).padStart(2, '0');
+            secsEl.textContent = String(s).padStart(2, '0');
+          }
+          
+          if (targetTime - now <= 0) {
+            var msg = currentLang === 'es' ? '¡Ya estamos casados!' : 'We\'re Married!';
+            var countdownEl = document.getElementById('jlCountdown');
+            if (countdownEl) {
+              countdownEl.innerHTML = '<div class="jl-c" style="min-width:260px;"><span>🎉</span><em>' + msg + '</em></div>';
+            }
+          }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      })();
+    }
+  </script>
+</body>
+</html>

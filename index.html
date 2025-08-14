@@ -52,6 +52,8 @@
         <li><a href="#" id="nav-about" onclick="showPage('about')" data-en="About Our Wedding" data-es="Nuestra Boda">About Our Wedding</a></li>
         <li><a href="#" id="nav-details" onclick="showPage('details')" data-en="Details" data-es="Detalles">Details</a></li>
         <li><a href="#" id="nav-rsvp" onclick="showPage('rsvp')" data-en="RSVP" data-es="Confirmar">RSVP</a></li>
+        <li><a href="#" id="nav-venue" onclick="showPage('venue')" data-en="Venue" data-es="Lugar">Venue</a></li>
+
       </ul>
 
       <div class="jl-nav-language">
@@ -518,5 +520,59 @@
       })();
     }
   </script>
+  <!-- VENUE PAGE -->
+<div id="page-venue" class="jl-page">
+  <div class="jl-about">
+    <div class="jl-about-hero">
+      <h1 class="jl-about-title" data-en="Venue Information" data-es="Información del Lugar">Venue Information</h1>
+      <p class="jl-about-subtitle" data-en="All you need to know about our wedding venue in Mexico City" data-es="Todo lo que necesitas saber sobre nuestro lugar de boda en Ciudad de México">
+        All you need to know about our wedding venue in Mexico City
+      </p>
+    </div>
+
+    <!-- Map -->
+    <div style="margin-bottom: 40px; text-align: center;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.2882861878595!2d-99.208525!3d19.436374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2018ae1df812f%3A0xbb1ab12f4cc8ef8!2sCasa%20de%20la%20Bola!5e0!3m2!1sen!2smx!4v1696794322233!5m2!1sen!2smx" 
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="jl-story-grid">
+      <div class="jl-story-card">
+        <span class="jl-story-icon">🏨</span>
+        <h3 class="jl-story-title" data-en="Recommended Hotels" data-es="Hoteles Recomendados">Recommended Hotels</h3>
+        <p class="jl-story-text" data-en="Stay nearby for convenience. We suggest Camino Real Polanco, Hotel Casa Blanca, and The Wild Oscar." data-es="Quédate cerca por conveniencia. Sugerimos Camino Real Polanco, Hotel Casa Blanca y The Wild Oscar.">
+          Stay nearby for convenience. We suggest Camino Real Polanco, Hotel Casa Blanca, and The Wild Oscar.
+        </p>
+      </div>
+      <div class="jl-story-card">
+        <span class="jl-story-icon">👗</span>
+        <h3 class="jl-story-title" data-en="Suggested Attire" data-es="Vestimenta Sugerida">Suggested Attire</h3>
+        <p class="jl-story-text" data-en="Dressy semi-formal. Think garden chic — flowy dresses, summer suits, and comfy shoes for cobblestones." data-es="Semi-formal elegante. Piensa en jardín chic — vestidos fluidos, trajes de verano y zapatos cómodos para empedrados.">
+          Dressy semi-formal. Think garden chic — flowy dresses, summer suits, and comfy shoes for cobblestones.
+        </p>
+      </div>
+    </div>
+
+    <!-- Photo placeholders -->
+    <div class="jl-story-grid">
+      <div class="jl-story-card">
+        <img src="placeholder.jpg" alt="Upload Venue Image" style="width:100%; border-radius: 16px; margin-bottom: 20px;">
+        <p class="jl-story-text">Casa de la Bola — beautiful historic estate ready to host our dream wedding 🌿</p>
+      </div>
+      <div class="jl-story-card">
+        <img src="placeholder.jpg" alt="Upload Hotel Photo" style="width:100%; border-radius: 16px; margin-bottom: 20px;">
+        <p class="jl-story-text">Nearby hotel option — perfect for a restful night after the festivities 🛏️</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
